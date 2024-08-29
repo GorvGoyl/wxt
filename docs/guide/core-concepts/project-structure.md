@@ -33,7 +33,7 @@ Here's a brief summary of each of these files and directories:
 - `entrypoints/`: Contains all the entrypoints that get bundled into your extension
 - `hooks/`: Auto-imported by default, contains hooks for React and Solid
 - `public/`: Contains any files you want to copy into the output folder as-is, without being processed by WXT
-- `hooks/`: Auto-imported by default, contains generic utilties used throughout your project
+- `utils/`: Auto-imported by default, contains generic utilities used throughout your project
 - `.env`: Contains [Environment Variables](/guide/config/runtime#environment-variables)
 - `.env.publish`: Contains Environment Variables for [publishing](/guide/production/publishing)
 - `app.config.ts`: Contains [Runtime Config](/guide/config/runtime)
