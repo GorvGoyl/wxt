@@ -38,3 +38,45 @@ Due to the way WXT orchestrates Vite builds, some plugins may not work as expect
 
 If an issue doesn't exist for your plugin, please [open a new one](https://github.com/wxt-dev/wxt/issues/new/choose)!
 :::
+
+## Importing Assets
+
+WXT supports the same 2 ways of importing assets as Vite:
+
+1. `assets/` directory
+   :::code-group
+
+   ```ts [JS]
+   import imageUrl from '~/assets/image.png';
+
+   const img = document.createElement('img');
+   img.src = imageUrl;
+   ```
+
+   ```html [HTML]
+   <img src="~/assets/image.png" />
+   ```
+
+   ```css [CSS]
+   .bg-image {
+     background-image: url(~/assets/image.png);
+   }
+   ```
+
+   :::
+
+2. `public/` directory
+   :::code-group
+   ```ts [JS]
+   const img = document.createElement('img');
+   img.src = '/image.png';
+   ```
+   ```html [HTML]
+   <img src="/image.png" />
+   ```
+   ```css [CSS]
+   .bg-image {
+     background-image: url(/image.png);
+   }
+   ```
+   :::

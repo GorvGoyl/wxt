@@ -150,6 +150,8 @@ export default defineConfig({
 });
 ```
 
+Alternatively, you can use [`@wxt-dev/auto-icons`](https://www.npmjs.com/package/@wxt-dev/auto-icons) to let WXT generate your icon at the required sizes.
+
 ## Permissions
 
 > [Chrome docs](https://developer.chrome.com/docs/extensions/reference/permissions/)

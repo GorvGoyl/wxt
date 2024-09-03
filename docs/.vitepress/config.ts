@@ -94,11 +94,17 @@ export default defineConfig({
           menuItem('Installation', 'installation.md'),
           menuItem('Migrate to WXT', 'migrate.md'),
         ]),
-        menuGroup('Core Concepts', '/guide/core-concepts/', [
+        menuGroup('Using WXT', '/guide/building/', [
           menuItem('Project Structure', 'project-structure.md'),
           menuItem('Entrypoints', 'entrypoints.md'),
-          menuItem('Browser Support', 'browser-support.md'),
-          menuItem('Vite', 'vite.md'),
+          menuItem('Extension APIs', 'extension-apis.md'),
+          menuItem('Assets', 'assets.md'),
+          menuItem('Target Different Browsers', 'target-different-browsers.md'),
+          menuItem('Content Scripts', 'content-scripts.md'),
+          menuItem('Storage', 'storage.md'),
+          menuItem('Messaging', 'messaging.md'),
+          menuItem('I18n', 'i18n.md'),
+          menuItem('Scripting', 'scripting.md'),
         ]),
         menuGroup('Configuration', '/guide/config/', [
           menuItem('wxt.config.ts', 'wxt.md'),
@@ -107,23 +113,7 @@ export default defineConfig({
           menuItem('Browser Startup', 'browser-startup.md'),
           menuItem('Runtime Config', 'runtime.md'),
           menuItem('TypeScript', 'typescript.md'),
-        ]),
-        menuGroup('Extension APIs', '/guide/extension-apis/', [
-          menuItem('Basic Usage', 'basic-usage.md'),
-          menuItem('I18n', 'i18n.md'),
-          menuItem('Messaging', 'messaging.md'),
-          menuItem('Scripting', 'scripting.md'),
-          menuItem('Storage', 'storage.md'),
-        ]),
-        menuGroup('Assets', '/guide/assets/', [
-          menuItem('Images', 'images.md'),
-          menuItem('CSS', 'css.md'),
-          menuItem('WASM', 'wasm.md'),
-        ]),
-        menuGroup('Content Scripts', '/guide/content-scripts/', [
-          menuItem('CSS', 'css.md'),
-          menuItem('UI', 'ui.md'),
-          menuItem('Content Script Context', 'context.md'),
+          menuItem('Vite', 'vite.md'),
         ]),
         menuGroup('WXT Modules', '/guide/wxt-modules/', [
           menuItem('Using Modules', 'using-modules.md'),

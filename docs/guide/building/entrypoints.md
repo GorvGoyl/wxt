@@ -1,6 +1,14 @@
+---
+outline: deep
+---
+
 # Entrypoints
 
-All files inside the `entrypoints/` directory are built WXT and bundled into the `.output` directory. They can be HTML, JS/TS, or CSS files.
+[[toc]]
+
+## Overview
+
+All files inside the `entrypoints/` directory are built by WXT and bundled into the `.output` directory. They can be HTML, JS, CSS, or any variant of those file types supported by Vite (Pug, TS, JSX, SCSS, etc).
 
 Here's an example set of entrypoints:
 
@@ -24,8 +32,8 @@ For web extensions, there are two types of entrypoints:
 Throughout the rest of WXT's documentation, listed files are refered to by name. For example:
 
 - Popup
-- Options,
-- Background,
+- Options
+- Background
 - Content Scripts
 - Etc.
 
@@ -40,7 +48,7 @@ Regardless of whether a entrypoint is listed or unlisted, it will still be bundl
 
 ## Adding Entrypoints
 
-Once again, refer to the [Entrypoint Types documentation](/guide/entrypoint-types/background) for the allowed file patterns for each entrypoint type.
+Once again, refer to the [Entrypoint Types](#entrypoint-types) below for the allowed file patterns for each entrypoint type.
 
 In general, each type of entrypoint can be defined as a single file or directory with an `index` file inside it.
 
@@ -73,6 +81,34 @@ export default defineContentScript({
 });
 ```
 
-> Refer to the [Entrypoint Types documentation](/guide/entrypoint-types/background) for a list of options configurable inside each entrypoint, and how to define them.
+> Refer to the [Entrypoint Types](#entrypoint-types) sections for a list of options configurable inside each entrypoint, and how to define them.
 
 When building your extension, WXT will look at the options defined in your entrypoints, and generate the manifest accordingly.
+
+## Entrypoint Types
+
+### Background
+
+### Bookmarkds
+
+### Content Scripts
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###

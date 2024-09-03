@@ -10,19 +10,17 @@ WXT provides a simplified API to replace the `browser.storage.*` APIs. Use the `
 import { storage } from 'wxt/storage';
 ```
 
-:::warning
-To use the `wxt/storage` API, the `"storage"` permission must be added to the manifest:
-
-```ts
-// wxt.config.ts
-export default defineConfig({
-  manifest: {
-    permissions: ['storage'],
-  },
-});
-```
-
-:::
+> [!IMPORTANT]
+> To use the `wxt/storage` API, the `"storage"` permission must be added to the manifest:
+>
+> ```ts
+> // wxt.config.ts
+> export default defineConfig({
+>   manifest: {
+>     permissions: ['storage'],
+>   },
+> });
+> ```
 
 [[toc]]
 

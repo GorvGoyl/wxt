@@ -44,7 +44,7 @@ console.log(useAppConfig()); // { theme: "dark" }
 
 WXT supports environment variables through [Vite](https://vitejs.dev/guide/env-and-mode.html#env-variables). You can create `.env` and `.env.*` files just like you would with Vite:
 
-```env
+```
 VITE_API_KEY=...
 ```
 
